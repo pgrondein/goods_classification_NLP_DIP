@@ -31,6 +31,7 @@ Descriptions are between 13 and 587 words long, with a majority between 13 and 1
 #### Product Name
 
 <img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/dc024de7-754c-4cf5-be58-a40299af7294" height="400">
+
 Product names are between 2 and 27 words long, with a majority between 4 and 10 words.
 
 These two features will be used for the NLP part of the classification model.
