@@ -114,8 +114,8 @@ Example: SIFT, ORB
 - *CNN Transfer Learning* algorithms: pre-trained convolutional neural network taking an input image and automatically returning the features of this image, by automatic extraction and prioritization of said features.
 Example: VGG16, in Standalone Feature Extractor
 
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/95c64e25-eea8-41f2-b2ab-38fd3dfec272" height="400">
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/45cf7f44-954a-4b17-941c-4d27055790ba" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/95c64e25-eea8-41f2-b2ab-38fd3dfec272" height="300">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/45cf7f44-954a-4b17-941c-4d27055790ba" height="200">
 
 ### Reduction & Clustering
 
