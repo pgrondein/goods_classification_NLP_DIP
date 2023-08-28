@@ -44,9 +44,11 @@ These two features will be used for the NLP part of the classification model.
 This is a perfect distribution.
 You can also look at wordclouds by product category :
 - **Kitchen**
-![kitchen](https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/9501d043-3773-4b91-bdd5-d64bd4b9daea)
+  
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/9501d043-3773-4b91-bdd5-d64bd4b9daea" height="400">
 - **Computers**
-![computers](https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8dba4cb1-4160-42a6-9262-f0c9ea0943db)
+  
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8dba4cb1-4160-42a6-9262-f0c9ea0943db" height="400">
 
 ## Data Pre-processing
 
@@ -90,3 +92,71 @@ Text and image parts are developed and evaluated separately. They are then evalu
 ### Feature Extraction
 #### Text
 
+Two types of methods are available:
+
+- *bag-of-word* type algorithms: gives a reduced and simplified representation of a text document in the form of **vectors** based on specific criteria such as the **frequency** of words. 
+Example: CountVectorizer, TF-IDF.
+**Pros**: fast, works with unknown words.
+**Cons**: does not consider the place of the word in the sentence, and does not capture the meaning of the word.
+- the so-called *Sentence Embedding* methods: give digital vector representations of the semantics or meaning of words, including the literal and implicit meaning. Thus, these word vectors can capture their connotation, and are combined into one dense vector per sentence. 
+Example: Word2Vec, BERT, USE
+**Pros**: often pre-trained, takes word position into account, understands semantics.
+**Cons**: does not consider words outside the corpus, more complex, “black box”.
+
+#### Image
+For feature extraction from images, several types of methods are available.
+
+- *Bag-of-visual-words* algorithms: takes an image and returns key points of this image in the form of features/vectors, the digital fingerprint of the image, invariant regardless of transformations.
+Example: SIFT, ORB
+- *CNN Transfer Learning* algorithms: pre-trained convolutional neural network taking an input image and automatically returning the features of this image, by automatic extraction and prioritization of said features.
+Example: VGG16, in Standalone Feature Extractor
+
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/95c64e25-eea8-41f2-b2ab-38fd3dfec272" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/45cf7f44-954a-4b17-941c-4d27055790ba" height="400">
+
+### Reduction & Clustering
+
+The reduction method is t-SNE.
+The clustering method is k-Means.
+
+We then draw a projection of the products with real and calculated categorization.
+
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/bad10dff-8e0e-4171-a52b-489a9dd0b579" height="400">
+
+### Evaluation
+
+In order to evaluate the accuracy of the method used and the efficiency of feature extraction algorithm tested, the ARI (Adjusted Rand Index) is calculated, which gives a measure of similarity between calculated categories and the real ones. Computation time is also considered, another important element.
+
+#### Text
+
+| Algorithm | ARI | Computation time |
+| :---: | :---: | :---: |
+| `Countvectorizer`  | 0.49 | 19 s |
+| `TF-IDF`  | 0.50 | 18 s |
+| `Word2Vec`  | 0.41 | 15 s |
+| `BERT`  | 0.32 | 2 min 30 s |
+| `USE`  | 0.63 | 10 s |
+
+USE seems to be the correct method for our problem for the NLP part.
+
+#### Image
+
+| Algorithm | ARI | Computation time |
+| :---: | :---: | :---: |
+| `SIFT`  | 0.04 | 10 min 45 s |
+| `ORB`  | 0.03 | 1 min 50 s |
+| `VGG16`  | 0.45 | 4 min |
+
+VGG16 is the most efficient algorithm for the DIP part.
+
+#### Text & Image
+
+| Algorithm | ARI | Computation time |
+| :---: | :---: | :---: |
+| `USE + VGG16`  | 0.65 | 4 min 20 s |
+
+## Conclusion
+
+The association of classification model for image and text makes it possible to reach an ARI of 0.65. The feasibility of the classification engine is therefore proven.
+
+From a performance + computation time point of view, the use of text only can be considered.
