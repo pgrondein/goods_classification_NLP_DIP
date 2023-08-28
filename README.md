@@ -44,12 +44,14 @@ These two features will be used for the NLP part of the classification model.
 
 This is a perfect distribution.
 You can also look at wordclouds by product category :
+
 - **Kitchen**
   
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/9501d043-3773-4b91-bdd5-d64bd4b9daea" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/9501d043-3773-4b91-bdd5-d64bd4b9daea" height="200">
+
 - **Computers**
   
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8dba4cb1-4160-42a6-9262-f0c9ea0943db" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8dba4cb1-4160-42a6-9262-f0c9ea0943db" height="200">
 
 ## Data Pre-processing
 
