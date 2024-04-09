@@ -24,13 +24,13 @@ A data sheet contains all the product information, including the description nec
 ### Single feature analysis
 #### Description
 
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/61082c5e-2204-45d8-8101-c98e35f58bd1" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/c9294aea-a160-4b74-97ec-537310ba3cb2" height="400">
 
 Descriptions are between 13 and 587 words long, with a majority between 13 and 100.
 
 #### Product Name
 
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/dc024de7-754c-4cf5-be58-a40299af7294" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8970dfa6-d780-4843-a5ac-1d42fb287e52" height="400">
 
 Product names are between 2 and 27 words long, with a majority between 4 and 10 words.
 
@@ -40,18 +40,18 @@ These two features will be used for the NLP part of the classification model.
 
 7 categories are identified for the products.
 
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/da81f2f9-3e65-4239-8c8a-a73fa80762c0" height="400">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/5a1cbeb4-6181-48d4-a86e-c0778ad08d1b" height="400">
 
 This is a perfect distribution.
 You can also look at wordclouds by product category :
 
 - **Kitchen**
   
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/9501d043-3773-4b91-bdd5-d64bd4b9daea" height="200">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/cea1b1bc-d120-4b5d-a823-36712f0a59bb" height="200">
 
 - **Computers**
   
-<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/8dba4cb1-4160-42a6-9262-f0c9ea0943db" height="200">
+<img src="https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/0ed2fa9a-f2f1-4d1f-8468-c2a7f5fce54b" height="200">
 
 ## Data Pre-processing
 
