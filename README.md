@@ -1,6 +1,6 @@
 # Customer goods Classification - NLP & DIP
 
-![bannière1](https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/dc9a9712-81dd-45ce-a1e2-ecd952e4e3fe)
+![bannière1](https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/fea40564-c0ad-49d8-966c-7a821fc9bdcf)
 
 ## Problem Definition
 
