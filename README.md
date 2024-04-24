@@ -1,4 +1,4 @@
-# Customer goods Classification - NLP & DIP
+# Consumer goods Classification - NLP & DIP
 
 ![bannière1](https://github.com/pgrondein/goods_classification_NLP_DIP/assets/113172845/f078eac1-246a-49df-a220-4b4053667563)
 
